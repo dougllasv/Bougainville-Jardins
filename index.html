@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bougainville Jardins</title>
+    <link rel="icon" type="img" href="icon.jpg">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            background-color: #166F41;
+            width: 100%;
+            height: 60px;
+            padding-left: 10px;
+            box-shadow: 2px 4px 2px #0B482C ;
+            align-items: center;
+            position: sticky;top:0; left: 0;
+        }
+        .logo{
+            height: 100%;
+            margin-left:20px;
+        }
+        .logoe{
+        height: 300%;
+        margin-left: 20px;
+        }
+        nav{
+        margin-top: 8px;
+         margin-left: auto;
+         text-align: right;
+         padding: 10px;
+         position: absolute;
+         
+
+        }
+        ul{
+            text-align: left;
+            list-style: none;
+            padding: 7px;
+        }
+        summary{
+        list-style: none;
+        text-align: center;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        color:#ffffff;
+        border-radius: 5px;
+        border: #0B482C 1px solid;
+        padding: 5px;
+        margin-bottom: 0;
+        }
+        details{
+            text-align: center;
+            display: inline-block;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            padding: 5px;
+            color: #fdfffe;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: left;
+        }
+        .inicio{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        #bemvindo{
+            color:#d8f3dc;
+            font-size: 50px;
+            margin-bottom: 0;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+        }
+        #nome{
+            text-align: center;
+            color: #f9f9f9;;
+            font-size: 80px;
+            margin-bottom: 5px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 3px rgb(65, 65, 65);
+        }
+        h2{
+            text-align: center;
+            color: #e2dfd2;
+            font-style: italic;
+            margin-top: 35px;
+        }
+        .menu{
+            position: absolute;
+            background-color: #045c22;
+            height: 130px;
+            margin-top: 0;
+            border: #2d3748 solid 1px;
+            border-radius: 10px;
+            margin-right: 0;
+            box-shadow: #013e04 2px 4px 2px;
+            padding: 1px;
+            text-align: left;
+
+        }
+        .exterior{
+            border-radius: 20px;
+            display: block;
+            margin: 0 auto;
+            width: 1000px;
+            height: 600px;
+            border: #013e04 solid 2px;
+            margin-bottom: 100px;
+        }
+        .bsobre{
+            display: inline-block;
+            background-color: #d9822b;
+            margin-top: 60px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-family:cursive;
+            text-align: center;
+            margin-bottom: 100px;
+            padding: 30px;
+        }
+        .sobre{
+        display: grid;
+        grid-template-columns: repeat 1fr 1fr;
+        grid-template-areas: 
+        "titulo titulo"
+        "foto1 texto1"
+        "texto2  foto2";
+        
+            background-color: #abeec2;
+            align-items: center;
+        }
+        #sobret{
+            grid-area: titulo;
+            grid-column: span 2;
+            color: #013e04;
+            font-size: 80px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        #flor{
+            grid-area: foto1;
+            width: 75%;
+            justify-self: center;
+            border-radius: 60px;
+            border: #0B482C solid 2px;
+        }
+        .container{
+            width: 70%;
+            margin-left:20px ;
+            grid-area: texto1;
+            background-color: #f9f9f9;
+            justify-self: center;
+            border-radius: 20px;
+            text-align: left;
+            border: #013e04 solid 1px;
+            box-shadow: #0B482C 2px 4px 3px;
+            font-size: 30px;
+            padding: 10px;
+            color: #1a3323;
+        }
+        .container2{
+            text-align: left;
+            width: 75%;
+            margin-left: 20px;
+            grid-area: texto2;
+            background-color: #f9f9f9;
+            justify-self: start;
+            border-radius: 20px;
+            border: #013e04 solid 1px;
+            box-shadow: #0B482C 2px 4px 3px;
+            font-size: 30px;
+            padding: 10px;
+            color: #1a3323;
+        }
+        #flor2{
+            grid-area: foto2;
+            max-width: 70%;
+            margin-right: 20px;
+            justify-self: center;
+            border-radius: 60px;
+            border: #0B482C solid 2px; 
+        }
+        .galeria{
+            align-items: center;
+            display: flex;
+            background-image: url(backgroud2.jpg);
+            flex-direction: column;
+        }
+        .galeriaf{
+            width: 800px;
+
+        }
+        #galeriat{
+            text-align: center;
+            font-size: 70px;
+            background-color: #166F41;
+            border: #1a3323 solid 1px;
+            padding: 15px;
+            margin-top: 50px;
+            color: #abeec2;
+            border-radius: 20px;
+        }
+        .contato{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #fale{
+            align-items: baseline;
+            text-align: center;
+            border: #2d3748 solid 1px;
+            background-color: #166f41;
+            color: #fdfdfd;
+            margin-bottom: 40px;
+            border-radius: 20px;
+            padding: 15px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #wpp{
+            margin: 10px;
+            background-color: #166F41;
+            padding: 15px;
+        }
+        #insta{
+            margin: 10px;
+            background-color: #cb3e3e;
+            padding: 15px;
+        }
+        #face{
+            margin: 10px;
+            background-color: #1536ca;
+            padding: 16px;
+        }
+        footer{
+            background-color: #045c22;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            margin-top: 50px;
+            width: 100%;
+            padding-bottom: 40px;
+            
+        }
+        h3{
+            color: #1b8d20;
+            text-shadow: #013e04 2px 2px 4px;
+        }
+        
+        @media (max-width: 768px) {
+            header{
+                height: 60px;
+            }
+            nav{
+                margin-top: 0;
+                margin-left: 0;
+                text-align: center;
+            }
+            a{
+                font-size: 12px;
+                padding: 5px;
+                margin-left: 0;
+                text-align: center;
+            }
+            #bemvindo{
+                font-size: 20px;
+            }
+            #nome{
+                font-size:30px;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+            h2{
+                font-size: 16px;
+                margin-top: 0;
+                font-size: small;
+            }
+            .logoe{
+                margin-left: 5px;
+                height: 250%;
+                margin-right: 0;
+                padding-right: 0;
+            }
+            .menu{
+                height: 100px;
+            }
+            summary{
+                font-size: 10px;
+                padding: 10px;
+                margin-bottom: 0;
+            }
+            li{
+                margin: 0;
+                padding: 0;
+            }
+            ul{
+                margin-right: 10px;
+            }
+            details{
+                margin-right: 30px;
+            }
+            .logo{
+                margin-left: 1px;
+            }
+            .exterior{
+                width: 300px;
+                height: 180px;
+                margin-bottom: 50px ;
+            }
+            .bsobre{
+                margin-top: 20px;
+                font-size: 10px;
+                margin-bottom: 25px;
+                padding: 10px;
+            }
+            #sobret{
+                font-size: 30px;
+            }
+            #flor{
+                width: 70%;
+            }
+            .container{
+                width: 70%;
+                font-size: 15px;
+            }
+            #flor2{
+                width: 70%;
+                margin-left: 45px;
+            }
+            .container2{
+                width: 70%;
+                font-size: 15px;
+                margin-left: 45px;
+
+            }
+            .sobre{
+                grid-template-areas: 
+        "titulo" 
+        "titulo"
+        "foto1"
+        "texto1"
+        "foto2" 
+        "texto2";
+        gap: 10px;
+            }
+        .galeriaf{
+                width: 300px;
+            }
+        #galeriat{
+            font-size: 30px;
+            padding: 5px;
+        }
+        #fale{
+            font-size: 20px;
+        }
+        }
+
+
+        
+    </style>
+        </head>
+<body>
+    <header>
+       <details>
+        <summary> ☰ </summary>
+        <nav>
+            <div class="menu">
+                <ul>
+            <li><a href="#inicio" >Início</a></li>
+            <li><a href="#sobre"> Sobre</a></li>
+            <li><a href="#galeria"> Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+       </details>
+          <img src="logo.jpg" alt="logo" class="logo">
+       <img src="logo_escrita.png" alt="logo_escrita" class="logoe">
+    </header>
+<main>
+    <section class="inicio" id="inicio">
+    <div>
+        <h1 id="nome">Bougainville Jardins</h1><hr>
+        <h2>" Cuidamos do seu jardim com muita arte e bom gosto! " </h2>
+        <a href="#sobre" class="bsobre"> Conheça-nos</a>
+        <img src="exterior.jpg" alt="exterior" class="exterior">
+    </div>
+    </section>
+    <section class="sobre" id="sobre">
+        <h1 id="sobret">Sobre Nós</h1>
+        <img src="flor.jpg" alt="flor" id="flor">
+        <div class="container">
+            <p>A Bougainville Jardins nasceu em 5 de abril de 2021, trazendo uma experiência de aproximadamente 17 anos com plantas e paisagismo.
+                Antes da criação da Bougainville, nosso fundador já trabalhava com plantas e paisagismo em uma loja anterior.
+            </p>
+            <p>
+                Pouco mais de um mês após sua fundação, a Bougainville abriu suas portas ao público, mesmo diante dos desafios daquele período.
+            </p>
+        </div>
+        <div class="container2">
+            <p>
+                Hoje trabalhamos com paisagismo, jardinagem e decoração com plantas, além de uma grande variedade de plantas ornamentais, flores para presentear, ávores 
+                frutíferas, seixos e insumos.
+            </p>
+            <p>
+                Nosso diferencial está no atendimento e na orientação aos clientes. Buscamos compreender e explicar quais plantas são mais adequadas para cada ambiente, 
+                considerando fatores como sol, sombra, espaço e frequência de rega.
+            </p>
+            <p>
+                Com espaço aconchegante, variedade e qualidade, a Bougainville Jardins busca ajudar cada cliente a encontrar as melhores opções para transformar
+                e cuidar de seus espaços.
+            </p>
+        </div>
+        <img src="flor2.jpg" alt="flor2" id="flor2">
+    </section>
+    <section class="galeria" id="galeria">
+        <h1 id="galeriat">Galeria</h1>
+        <img src="galeria1.png" alt="galeria" class="galeriaf">
+        <img src="galeria2.jpg" alt="galeria" class="galeriaf">
+        <img src="galeria3.jpg" alt="galeria" class="galeriaf">
+
+    </section>
+    <section class="contato" id="contato">
+        <h1 id="fale">Fale Conosco!</h1>
+    <a href="https://wa.me/5538992280777?text=Olá,%20vim%20pelo%20site%20gostaria%20de%20saber%20mais!" target="_blank" id="wpp"> 💬 Whatsapp </a>
+    <a href="https://www.instagram.com/bougainville_jardins?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" id="insta"> 📷 Instagram</a>
+    <a href="https://www.facebook.com/BougaInville2/" id="face"> ⓕ Facebook</a>
+
+    </section>
+    <footer>
+        <h3> Bougainville Jardins</h3>
+        <p> Paisagismo ○ Jardinagem ○ Plantas</p>
+        <p> Telefone: +55 (38) 992280777 </p>
+        <p> Email: bougainville.jardins@gmail.com</p>
+        <p> © 2026 Bougainville Jardins</p>
+    </footer>
+</main>
+</body>
+</html>
