@@ -1,0 +1,238 @@
+   body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            display: flex;
+            background-color: #166F41;
+            width: 100%;
+            box-sizing: border-box;
+            height: 60px;
+            padding-left: 10px;
+            box-shadow: 2px 4px 2px #0B482C ;
+            align-items: center;
+            position: sticky;top:0; left: 0;
+        }
+        .logo{
+            height: 100%;
+            margin-left:20px;
+        }
+        .logoe{
+        height: 300%;
+        margin-left: 20px;
+        }
+        nav{
+        margin-top: 8px;
+         margin-left: auto;
+         text-align: right;
+         padding: 10px;
+         position: absolute;
+         
+
+        }
+        ul{
+            text-align: left;
+            list-style: none;
+            padding: 7px;
+        }
+        summary{
+        list-style: none;
+        text-align: center;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20px;
+        color:#ffffff;
+        border-radius: 5px;
+        border: #0B482C 1px solid;
+        padding: 5px;
+        margin-bottom: 0;
+        }
+        details{
+            text-align: center;
+            display: inline-block;
+            position: relative;
+        }
+        a{
+            text-decoration: none;
+            padding: 5px;
+            color: #fdfffe;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: left;
+        }
+        .inicio{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url(background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        #nome{
+            text-align: center;
+            color: #f9f9f9;;
+            font-size: 80px;
+            margin-bottom: 5px;
+            margin-top: 20px;
+            text-shadow: 2px 2px 3px rgb(65, 65, 65);
+        }
+        h2{
+            text-align: center;
+            color: #e2dfd2;
+            font-style: italic;
+            margin-top: 35px;
+        }
+        .menu{
+            position: absolute;
+            background-color: #045c22;
+            height: 130px;
+            margin-top: 0;
+            border: #2d3748 solid 1px;
+            border-radius: 10px;
+            margin-right: 0;
+            box-shadow: #013e04 2px 4px 2px;
+            padding: 1px;
+            text-align: left;
+
+        }
+        .exterior{
+            border-radius: 20px;
+            display: block;
+            margin: 0 auto;
+            width: 1000px;
+            height: 600px;
+            border: #013e04 solid 2px;
+            margin-bottom: 100px;
+        }
+        .bsobre{
+            display: inline-block;
+            background-color: #d9822b;
+            margin-top: 60px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-family:cursive;
+            text-align: center;
+            margin-bottom: 100px;
+            padding: 30px;
+        }
+        .sobre{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        grid-template-areas: 
+        "titulo titulo"
+        "foto1 texto1"
+        "texto2  foto2";
+        
+            background-color: #abeec2;
+            align-items: center;
+        }
+        #sobret{
+            grid-area: titulo;
+            grid-column: span 2;
+            color: #013e04;
+            font-size: 80px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        #flor{
+            grid-area: foto1;
+            width: 75%;
+            justify-self: center;
+            border-radius: 60px;
+            border: #0B482C solid 2px;
+        }
+        .container{
+            width: 70%;
+            margin-left:20px ;
+            grid-area: texto1;
+            background-color: #f9f9f9;
+            justify-self: center;
+            border-radius: 20px;
+            text-align: left;
+            border: #013e04 solid 1px;
+            box-shadow: #0B482C 2px 4px 3px;
+            font-size: 30px;
+            padding: 10px;
+            color: #1a3323;
+        }
+        .container2{
+            text-align: left;
+            width: 75%;
+            margin-left: 20px;
+            grid-area: texto2;
+            background-color: #f9f9f9;
+            justify-self: start;
+            border-radius: 20px;
+            border: #013e04 solid 1px;
+            box-shadow: #0B482C 2px 4px 3px;
+            font-size: 30px;
+            padding: 10px;
+            color: #1a3323;
+        }
+        #flor2{
+            grid-area: foto2;
+            max-width: 70%;
+            margin-right: 20px;
+            justify-self: center;
+            border-radius: 60px;
+            border: #0B482C solid 2px; 
+        }
+        .galeria{
+            display: flex;
+            align-items: center;
+            background-image: url(backgroud2.jpg);
+            flex-direction: column;
+        }
+        .galeriaf{
+            width: 800px;
+
+        }
+        #galeriat{
+            text-align: center;
+            font-size: 80px;
+            background-color: #166F41;
+            border: #1a3323 solid 1px;
+            padding: 15px;
+            margin-top: 50px;
+            color: #abeec2;
+            border-radius: 20px;
+        }
+        #fale{
+            text-align: center;
+            border: #2d3748 solid 1px;
+            background-color: #5d805c;
+            color: #013e04;
+            margin-bottom: 40px;
+            display: flex;
+        }
+        .contato{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #wpp{
+            background-color: #166F41;
+            padding: 15px;
+            margin: 10px;
+        }
+        #insta{
+            background-color: #cb3e3e;
+            padding: 15px;
+            margin: 10px;
+        }
+        #face{
+            background-color: #1536ca;
+            padding: 15px;
+            margin: 10px;
+        }
+    footer {
+    background-color: #045c22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 50px;
+    width: 100%;
+    padding-bottom: 40px;
+}
