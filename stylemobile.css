@@ -105,3 +105,38 @@
             padding: 5px;
         }
         }
+
+/* Correções de responsividade sem redesenhar as seções. */
+@media (max-width: 768px) {
+    .exterior {
+        width: min(92vw, 300px);
+        height: auto;
+    }
+    .sobre {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .container,
+    .container2 {
+        width: min(88%, 100%);
+        margin-left: 0;
+        justify-self: center;
+        font-size: 15px;
+    }
+    #flor2 {
+        width: min(80%, 320px);
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .galeriaf {
+        max-width: 92%;
+        height: auto;
+    }
+    #nome {
+        overflow-wrap: anywhere;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}

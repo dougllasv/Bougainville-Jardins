@@ -62,7 +62,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background-image: url(background.jpg);
+            background-image: url(background.webp);
             background-repeat: no-repeat;
             background-size: cover;
             text-align: center;
@@ -180,7 +180,7 @@
         .galeria{
             display: flex;
             align-items: center;
-            background-image: url(backgroud2.jpg);
+            background-image: url(backgroud2.webp);
             flex-direction: column;
         }
         .galeriaf{
@@ -235,4 +235,22 @@
     margin-top: 50px;
     width: 100%;
     padding-bottom: 40px;
+}
+
+/* Ajustes técnicos: preservam a identidade visual e evitam overflow. */
+* {
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+a:focus-visible, summary:focus-visible {
+    outline: 3px solid #d9822b;
+    outline-offset: 3px;
+}
+section {
+    scroll-margin-top: 70px;
 }
